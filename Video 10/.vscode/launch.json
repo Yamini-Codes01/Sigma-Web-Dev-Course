@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "http://10.13.55.52:3000/index.html",
+            "request": "launch",
+            "url": "http://10.13.55.52:3000/index.html"
+        },
+        {
+            "type": "msedge",
+            "name": "http://192.168.1.7:3000/index.html",
+            "request": "launch",
+            "url": "http://192.168.1.7:3000/index.html"
+        }
+    ]
+}
