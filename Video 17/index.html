@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector: This selector targets all elements of a specific type. For example, if you want to select all <p> elements, you would use the selector "p". In this case, we are selecting all <div> elements and applying a background color of light pink to them. */
+        /* div{
+            background-color: lightpink;
+        } */
+        /* Class Selector */
+        .lightpink {
+            background-color: lightpink;
+        }
+
+        /* Id selector */
+        #green {
+            background-color: lightgreen;
+        }
+
+        /* Child selector */
+        /* This selector targets elements that are direct children of a specified parent element. For example, if you want to select all <li> elements that are direct children of a <ul> element, you would use the selector "ul > li". In this case, we are selecting all <p> elements that are direct children of a <div> element and applying a background color of light blue to them. */
+        div>p {
+            background-color: lightblue;
+        }
+
+        /* Descendant selector */
+        div p {
+            color: yellow;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: fuchsia;
+        }
+        /* visited tabhi apply hoga jab hum link visit kar chuke honge */
+        a:link{
+            color: maroon;
+        }
+        /* link tabhi apply hoga jab hum link pe click nahi karenge.  */
+        a:active{
+            background-color: cyan;
+        }
+        /* active tabhi apply hoga jab hum link pe click karenge aur usko hold karenge. */
+        a:hover{
+            background-color: chocolate;
+        }
+        /* hover tabhi apply hoga jab hum link pe mouse le jaayenge.  */
+        p:first-child{
+            font: italic bold 20px/2 cursive;
+        }
+        .one p:first-child{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p> 
+        <!-- isme nhi hoga kyuki ye main ka second child hai aur first-child selector sirf first child pe apply hota hai. -->
+    </main>
+    <div class="lightpink">
+        I am a div element.
+        <p>Hey! I am Yamini Soni</p>
+    </div>
+    <div id="green">
+        Hey! I am another div element.
+        <article>
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+    <a href="https://www.stackoverflow.com">Go to Stack Overflow</a>
+    <a href="https://www.quora.com">Go to Quora</a>
+</body>
+
+</html>
