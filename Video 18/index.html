@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model - CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: lightpink;
+        }
+        /* .box se saare boxes ko target karega aur unka background color lightpink set karega. */
+        .box1 {
+            color: darkgreen;
+            padding: 100px;
+            margin: 25px;
+            border: 4px solid black;
+            height: 200px; /* height: if box sizing: border-box nahi hota to height sirf content ke liye hota, lekin box sizing: border-box hone se height content, padding aur border ke liye hota hai.  */
+            box-sizing: border-box;
+        }
+        /* padding: this is the space above, below, left and right of the content. It is the space between the content and the border.  */
+        /* .box1 se sirf pehle box ko target karega aur uska text color darkgreen set karega.  */
+        .box2 {
+            color: maroon;
+            padding: 100px;
+            margin: 25px;
+            border: 4px purple solid;
+            height: 200px;
+            box-sizing: border-box;
+             /* height: if box sizing: border-box nahi hota to height sirf content ke liye hota, lekin box sizing: border-box hone se height content, padding aur border ke liye hota hai.  */
+        }
+        /* margin: this is the space above, below, left and right of the element. It is the space outside the border.  */
+        /* .box2 se sirf doosre box ko target karega aur uska text color maroon set karega.  */
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+    <p style="font-size: 30px;">Margin Collapse</p>
+    <p>By click on the specific box and inspect it you can see the box model in action.</p>
+    <img src="box-model.png" width="700" alt="Box Model Image">
+</body>
+</html>
