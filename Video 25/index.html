@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        body {
+            background-color: linen;
+        }
+
+        nav ul li {
+            list-style: devanagari;
+            /* inspect me kisi bhi list pr click karke element style me likhna list-style suggestions aayenge yaha koi bhi likh sakte hain spelling sahi honi chahiye */
+            background-color: thistle;
+            /* isse marker bahar hi reh jayega */
+            border: 2px solid maroon;
+            padding: 2px;
+            list-style-type: "❤️👻🐻🐻‍❄️🦓🐸";
+            list-style-position: inside;
+            /* list-style: disc inside url("https://wallpapers-clan.com/wp-content/uploads/2022/12/funny-spongebob-gif-pfp-1.gif"); */
+            /* list-style-image: url("https://wallpapers-clan.com/wp-content/uploads/2022/12/funny-spongebob-gif-pfp-1.gif"); */
+            /* isse marker pr bhi color aa jayega */
+            /* display: flex;
+            padding: 23px;
+            list-style: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <span>List is made of two marker and the content (ex:- home, about). Agar hum iska mark hide ya hatana
+                chahte hain toh hum</span>
+            <span style="background-color: rgb(178, 178, 240); letter-spacing: 3px;;">list-style</span>
+            <span style="font-style: italic;">(most important)</span>
+            <span>use karenge</span>
+
+        </ul>
+    </nav>
+</body>
+
+</html>
