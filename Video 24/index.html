@@ -8,11 +8,19 @@
     <style>
         .box {
             border: 2px solid black;
+            border-radius: 8px;
             padding: 34px;
             box-shadow: 4px 5px 5px 1px #ab8190;
         }
         .text-element{
             text-shadow: 5px 2px 4px #c780ee;
+            outline: 2px solid purple;
+            /* outline and border are similar */
+            /* difference is outline isn't a part of box model */
+            /* borders change ho sakti hai outline nhi */
+            /* outlines overlap karti hain */
+            /* borders curvy bhi ho sakti hain pr outlines nhi */
+            outline-offset: 25px;
         }
     </style>
 </head>
@@ -24,6 +32,7 @@
     <p class="text-element">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minima ullam totam praesentium maiores a tempore earum soluta voluptatem odio modi corrupti temporibus architecto minus sint, repudiandae ut? Voluptas, saepe.
     </p>
+    <br>
     <div><a href="https://www.codewithharry.com/tutorial/css-shadows">Shadows in CSS</a></div>
     <div>
         <iframe width="700" height="450" src="https://www.codewithharry.com/tutorial/css-shadows"
