@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        body {
+            background-color: lavenderblush;
+        }
+
+        a:link {
+            color: maroon;
+        }
+
+        a:visited {
+            color: rgb(106, 15, 73);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid indigo;
+            /* margin: 25px auto; */
+            display: inline;
+            /* inline lagane se width ka koi fark nhi padega  */
+            display: inline-block;
+            /* inline block se hi top me margin and padding aayegi inline se nhi aayegi.  */
+            /* isse ye ek inline element ban gaya */
+            width: 344px;
+            /* display: none; */
+            padding: 45px;
+            margin: 45px;
+        }
+
+        .box1 {
+            /* display: none; */
+            /* display none se jagah bhi chali jayegi */
+            /* visibility: hidden; */
+            /* visibility hidden se jagah rahegi */
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+    <!-- <div>also a nice box</div> -->
+    <!-- isme bhi class lagane se ye inline ho gaya hai -->
+
+    <span>I am a good</span>
+    <span style="background-color: rosybrown; letter-spacing: 6px; font: caption;">&nbsp;girl&nbsp;</span>
+
+
+    <!-- span lagane se break nhi aata, ye developer ke liye hota hai isse particular word(s) ko style kar sakte hain -->
+    <div>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display">Display
+            CSS</a>
+    </div>
+</body>
+
+</html>
