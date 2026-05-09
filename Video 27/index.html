@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solution for Exercise 2</title>
     <style>
-        p{
+        /* p{
             background-color: blue;
             color: white;
         }
         div p:first-child{
             background-color: yellow;
             color: red;
-        }
+        } */
         /* div p:nth-child(2){
             background-color: blue;
             color: white;
         }
          */
+
+
+        div p:first-child {
+            color: red;
+            background-color: yellow;
+        }
+
+        div p:not(:first-child){
+            color: white;
+            background-color: blue;
+        }
+
+        
     </style>
 </head>
 <body>
