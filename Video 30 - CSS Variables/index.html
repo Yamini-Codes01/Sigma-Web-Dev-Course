@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        body {
+            background-color: #fef4fd;
+        }
+
+        :root {
+            /* root ke andr global variables hote hain6-== */
+            --color: rgb(159, 159, 255);
+            --seccolor: rgb(195, 195, 246);
+            /* these are variables */
+            /* ab main yaha variables ko change karke jaha jaha maine ye colors daale honge (themed website) waha eksaath sabka color change kar sakti hu aur mujhe har jagah baar baar color lagane ki bhi zaroorat nhi hai */
+            --defpad: 23px;
+            --defop: 0.3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            /* isse horizontally lag jaate hain */
+        }
+
+        ul li {
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 12px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color: plum;
+            /* ye ab local variable ban gaya hai ab iss block me --color pink hi rahega */
+            background-color: var(--color);
+            /* agar color naam ka variable nhi hota hai toh hum ⬇️ saath me color likh sakte toh woh color lag jayega*/
+            background-color: var(--color, plum);
+        }
+
+        .nav {
+            background-color: var(--color); 
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque dolore repellat deserunt molestias dolorum
+        libero placeat velit suscipit animi! Fugiat, quae pariatur eaque sequi excepturi accusantium consequatur
+        distinctio enim sunt dolore tenetur ipsum vitae placeat, debitis assumenda neque iste quos recusandae sit optio.
+        Ducimus, cum!
+    </div>
+</body>
+
+</html>
