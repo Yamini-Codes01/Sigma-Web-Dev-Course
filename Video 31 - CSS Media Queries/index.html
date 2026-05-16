@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <!-- Media Queries allow us to design a responsive website
+     helps us to maintain styles on different sizes and types of devices -->
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        @media screen and (orientation: landscape) {
+            /* isse jab tak width > height rahegi tab tak hi border ya style dikhega */
+            body{
+                border: 2px solid purple;
+            }
+        }
+
+        @media only screen and (max-width: 455px) {
+
+            /* max ki jagah min krdenge toh ulta ho jayega */
+            body {
+
+                background-color: #d8c9f2;
+            }
+
+
+            .boxes {
+                flex-direction: column;
+                /* @media block me ye lagane se jab max width tak jayega toh columns me ho jayenge box */
+                /* 😶‍🌫️inspect mein width kam zaada karke dekhna */
+            }
+        }
+
+
+
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+        .boxes {
+            display: flex;
+            /* isse horizontally allign ho jaate hain horizontally kam space hone pr compressed dikhne lagte hain pr horizontally hi alligned rahenge */
+            /*  */
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: aliceblue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div>
+            Hey I am a pink body girl!
+        </div>
+
+        <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</body>
+
+</html>
