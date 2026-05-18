@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear - CSS</title>
+    <!--👉 float and clear use nhi hote in modern websites -->
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* pehle img overflow ho rhi thi isse ye sahi ho jayega */
+        }
+        img{
+            float: right;
+            /* right side float karayega */
+            border-radius: 10px;
+        }
+        .card{
+            border: 2px solid purple;
+        }
+        .card:nth-child(3){
+            background-color: rgb(255, 233, 255);
+            clear: right;
+            /* clear right se right side koi bhi element allow nhi karega pr agar left mwin rakhenge toh allow karega */
+            /* clear both karenge toh dono side allow nhi karega */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="230px" src="lotus-image.jpg" alt="">
+        <div class="card">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, asperiores distinctio eaque voluptatem fuga est debitis explicabo nisi numquam quae officiis consectetur quam suscipit veritatis? Culpa architecto illo expedita eveniet quae nostrum aut cum itaque explicabo perspiciatis minima distinctio illum, obcaecati molestias quis dolorum laudantium ab quam sint reiciendis quos! At odit cumque aliquid. Beatae sequi porro aliquid excepturi ad?</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestias magnam modi, ea non at aspernatur eum, nulla, iusto facilis nostrum hic! Cum libero quas aliquam dolorum, laborum quam sit odit laboriosam minima ratione nobis eos voluptatem! Neque aliquid exercitationem fuga magni quaerat assumenda eveniet temporibus unde deleniti dolorum ea aut vero praesentium repellat numquam aliquam sequi voluptatibus dicta, asperiores veritatis architecto adipisci! Atque ducimus ab cupiditate perspiciatis. Aliquam quia iste iusto sapiente corporis assumenda repudiandae totam sequi eveniet. Similique accusantium tenetur quaerat sequi doloribus earum libero autem atque dolor eligendi, non perferendis consectetur facere incidunt corporis! Laborum minus ducimus, aliquid quod odit eos non? Facilis, eum culpa libero voluptatum reiciendis debitis velit obcaecati officia ipsa deserunt dolore aspernatur tempora distinctio totam eveniet voluptatibus beatae omnis, consequuntur earum molestias labore laboriosam rerum ipsum! Hic necessitatibus dignissimos dolore facilis laboriosam error dicta asperiores non, distinctio nihil id obcaecati eum earum eius veritatis doloremque incidunt voluptatum placeat, rerum quae nostrum, mollitia consectetur assumenda! Laboriosam ullam ipsum est porro alias repellendus optio dolore a explicabo consectetur mollitia, veritatis, ratione similique esse reprehenderit dolorem? Fuga aliquam, animi incidunt porro hic veniam voluptas expedita consequatur, quidem corrupti sequi iure et quae commodi fugiat adipisci ullam id ex, quo at aliquid? Voluptatum rerum quibusdam, sit expedita atque dolor id omnis sequi odit facere ipsum unde vero repellendus error voluptates molestiae, nulla voluptatibus excepturi deleniti culpa quidem exercitationem fugit? Cumque unde mollitia nisi nostrum illo facere id quas accusamus facilis, voluptatem minus. Nisi distinctio hic deleniti. Facere laboriosam architecto porro, maiores commodi magnam pariatur exercitationem vel itaque enim eligendi sed repellat quidem dolorum! Nesciunt magni expedita, sit neque animi modi nostrum quibusdam eveniet nam pariatur provident accusantium repellat temporibus atque consequatur asperiores blanditiis at sint quaerat veniam. Iure ipsam laudantium placeat consequuntur a animi veritatis dicta reiciendis incidunt ipsa est, blanditiis odit consectetur, perferendis impedit harum ducimus? Autem ipsam aperiam pariatur nisi ducimus dolorum rem suscipit accusamus possimus! Nihil aspernatur est impedit aliquam, temporibus soluta ducimus dolores accusantium excepturi aliquid!</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
