@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            /* boxes ke first child pr lagane ke liye yahi likhna hoga */
+            background-color: antiquewhite;
+        }
+
+        .boxes::first-line {
+            /* irrespective of no. of words  */
+            color: maroon;
+        }
+
+        .boxes * {
+            color: rgb(43, 111, 6);
+            /* border: 2px solid rgb(173, 4, 142); */
+            /* border-radius: 15px; */
+            /* padding: 10px; */
+            /* margin: 4px; */
+        }
+
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            border: 2px solid rgb(162, 4, 162);
+            border-radius: 60px;
+            padding: 16px;
+            margin: 8px;
+        }
+
+        [data-color="primary"] {
+            margin-top: 45px;
+            padding-top: 45px;
+        }
+
+        .box:nth-child(odd) {
+            border-radius: 16px;
+        }
+
+        .box:last-child {
+            background-color: rgb(242, 216, 216);
+        }
+
+        .box:nth-last-child(2) {
+            text-decoration: overline;
+            text-decoration-style: wavy;
+            text-decoration-color: rgb(191, 150, 134);
+        }
+
+        .boxes::before {
+            content: "Shri Radhe🧬";
+            /* isse CSS ke through elements ko dynamically insert kiya ja sakta hai  */
+        }
+
+        .boxes::after {
+            content: "Shri Ganeshay Namah";
+            color: rgb(223, 93, 0);
+            font-weight: bold;
+            font-size: larger;
+        }
+        .boxes::selection{
+            color: purple;
+            background-color: rgb(255, 216, 255);
+            /* jab text select karenge tab dikhega */
+        }
+        .box::first-letter{
+            color: midnightblue;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: rgb(111, 111, 230);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a Box! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laborum nobis,
+            tenetur facilis veritatis molestiae maiores nesciunt corrupti labore voluptas impedit, iure iste nihil rerum
+            non dolorum. Facere provident in culpa suscipit a incidunt itaque consectetur soluta iure. Nobis eum omnis
+            officiis deleniti cum, distinctio quia. Suscipit ut eos sequi ratione autem. Placeat, ratione ipsa,
+            consequatur obcaecati voluptate iure dolores dignissimos alias hic qui repellat totam quidem exercitationem
+            esse nulla reiciendis? Aliquam temporibus vel placeat? Eum id voluptatum delectus, veniam deserunt repellat
+            maiores accusamus odit vel voluptate nulla porro, deleniti dolorem tenetur. Porro, eligendi praesentium?
+            Quaerat tempore impedit magni dolor nam.</div>
+        <div class="box">Hey I am a Box!</div>
+        <div class="box">Hey I am a Box!</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
