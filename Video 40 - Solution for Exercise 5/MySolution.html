@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Design the Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:wght@400;500;600;700&display=swap');
+    </style>
+    <style>
+        *{
+            align-items: center;
+            margin: 0;
+        }
+        body {
+            background-color: white;
+        }
+
+        .nav {
+            margin: 0;
+            padding: 20px;
+            border: 2px solid;
+            align-items: center;
+            position: fixed;
+            /* width: 100%; */
+            position: sticky;
+            top: 0;
+            background-color:lavender;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            /* display: flex;
+            flex-direction: row; */
+            /* list-style: none; */
+            padding: 10px 20px;
+            align-items: center;
+        }
+
+        .nav ul li:hover{
+            background-color: rgba(181, 181, 242, 0.493);
+            /* border: 2px solid rgb(35, 190, 237); */
+            border-radius: 60px;
+            font-family: 'Poppins';
+        }
+
+        .nav ul li {
+            list-style: none;
+            /* display: flex; */
+            display: inline-block;
+            font-family: 'Baloo Bhai 2';
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav ul{
+            align-items: center;
+        }
+
+        .nav ul li a{
+            color: black;
+            text-decoration: none;
+        }
+        .back {
+            margin: 10px;
+            padding: 0;
+            border: 2px solid;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* width: 100%; */
+            background-color: antiquewhite;
+        }
+
+        .left, .right {
+            border: 2px solid;
+            width: 400px;
+            height: 400px;
+            background-color: lightcyan;
+        }
+
+        .down {
+            margin: 8px 40px;
+            padding: 100px;
+            height: 100px;
+            border: 2px solid;
+            border-radius: 15px;
+            align-items: center;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(218, 254, 236);
+        }
+        .down p{
+            align-items: center;
+        }
+        .logo{
+            position: fixed;
+            bottom: 0px;
+            right: 1px;
+        }
+        .logo img{
+            border-radius: 100px;
+        }
+        .footer{
+            border: 2px solid;
+            width: 100vw;
+            display: flex;
+            background-color: lavenderblush;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <header><nav>
+            <ul>
+                <li><a href="/">Innovations</a></li>
+                <li><a href="/">Creations</a></li>
+                <li><a href="/">Launchpad</a></li>
+                <li><a href="/">Power Moves</a></li>
+                <li><a href="/">Cosmic Dreams</a></li>
+                <li><a href="/">Knowledge Hub</a></li>
+                <li><a href="/">Vibes</a></li>
+                <li><a href="/">Experiments</a></li>
+            </ul>
+        </nav></header>
+    </div>
+    <div class="back">
+        <div class="left">
+
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+    <div class="down">
+        <p>Welcome to this Sigma Web Development Course!</p>
+    </div>
+    <div class="logo">
+        <img width="150px" src="baddie2.jpg" alt="">
+    </div>
+    <div class="footer">
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
