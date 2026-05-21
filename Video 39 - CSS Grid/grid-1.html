@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        .container {
+            height: 70vh;
+            width: 80vw;
+            border: 2px solid black;
+            justify-items: center;
+            /* jab items ko grid ke centre mein karna ho tab ye use hoga */
+
+            justify-content: center;
+            /* jab puri grid ko container ke align karna ho tab justify-content: use karenge */
+            /* use end instead of flex end  */
+            align-items: center;
+            /* cell ki andr align honge */
+            /* align-content: center; */
+
+
+            place-content: center;
+            /* isse align content and justify-content: dono center ho jayenge */
+
+
+            display: grid;
+            /* grid-template-columns: [pehla] 120px [dusra] 100px [teesra]; */
+            /* pehla dusra teesra lines ke naam hai */
+            /* agar ye na bhi lagaye tab bhi automatically ho jayega */
+            /* isse 2 columns ban jayenge order - 1 2 3 4 5 */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* 1+2+1=4 mtlb 4 parts mein divide karega aur mid wala 2 ki space lega */
+            /* 3 baar 1fr matlab 3 tukdo mein baant diya (1/3rd) fraction */
+
+            /* grid-template-columns: repeat(4, 1fr); */
+
+/* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+/* mtlb min hoga 100px aur max jayega 1fr (80vw ko 4 mein divide karke) */
+
+grid-template-columns: repeat(4, 80px);
+grid-template-rows: repeat(2, 80px);
+
+
+            gap: 34px;
+            /* use gap instead of padding */
+            row-gap: 10px;
+            column-gap: 44px;
+        }
+
+        .item {
+            border: 2px solid rgb(86, 132, 85);
+            height: 55px;
+            width: 55px;
+            /* width hatakr dekhna */
+        }
+
+        /* .item4 {
+            grid-row: 1/2;
+            /* grid-column: 1/2; */
+        /* mtlb 1 se start ho aur 2nd line tak aaye */
+        /* grid-column: pehla/teesra; */
+        /* now order becomes 1 4 2 3 5 */
+        /* particular item ko ye uss position pr kar dega */
+        /* order - 4 1 2 3 5 */
+
+        /* grid-row-start: 1; */
+        /* grid-row-end: 2; */
+        /* same hi kaam karega (grid-row: 1/2;) */
+        /* } */
+
+        /* .item1 {
+            /* grid-row: 1/2; */
+            /* grid-column: 1/2; */
+            /* ab ye overlap ho jayega 4 pr */
+        /* } 
+
+        /* .item2 {
+            align-self: start;
+            justify-self: end;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
