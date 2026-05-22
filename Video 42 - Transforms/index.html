@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            margin: 50px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            align-items: center;
+        }
+
+        .box1 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid;
+            /* transform: rotate(45deg); */
+            /* transform: rotateX(50deg); */
+            /* box upr se andr ki taraf (rotate) ho gaya hai  */
+
+            /* transform-origin */
+            transform: rotate(119deg);
+            /* transform-origin: 50% 50%; */
+            /* 50-50% is default */
+            transform-origin: 50% 0%;
+            /* badhane se aage badhta jayega */
+            /* 0 0 se top left corner fix ho jayega  */
+            /* Center of origin - jo fixed rahega rotation ke waqt */
+
+        }
+
+        .box2 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid;
+            margin: 50px;
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateZ(40deg); */
+            /* transform: scaleX(1.6); */
+            /* transform: scaleY(1.4); */
+            /* isse uss direction badh jayega */
+
+            /* transform: skew(5deg); */
+            transform: skewY(40deg);
+            /* isse khich jayega alternative corners se*/
+        }
+
+        .box3 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+
+            /*⭐important*/
+            /* transform: translateX(34px);  */
+            /* 34 px shift ho jayega */
+            /* transform: translateY(-100%); */
+            transform: translateY(100%) skewX(40deg) translateX(45%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>box</p>
+        </div>
+        <div class="box2">
+            <p>box</p>
+        </div>
+        <div class="box3">
+            <p>box</p>
+        </div>
+    </div>
+</body>
+
+</html>
