@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trannsition Property</title>
+    <!-- Transition - ek state se dusre state mein smoothly le jaana -->
+    <style>
+        .container {
+            background-color: mistyrose;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box {
+            background-color: pink;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: transform; */
+            /* transition-property: all; */
+            /* transition-property: transform, background-color;
+            transition-duration: 3s; */
+            /* duration mtlb kitni der chalega */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: cubic-bezier(0.93,-0.1, 1,-0.44); */
+            /* inspect mein jaakr dekho ek option hoga issimein usse open karke kaise bhi customise kar sakte hain */
+            /* transition-delay: 0.5s; */
+            /* delay mtlb kitni der baad chalega */
+
+            /* Short Hand Property */
+            transition: all 3s ease-in-out 0.5s;
+            /* ⭐transition pr hover karke mdn reference pr click karo */
+        }
+
+        .translate {
+            /* transform: translateX(10vw) translateY(10vh); */
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            /* ye lagane se 10-10 % vw and vh mein khisak jayega (translate) */
+            /* pr ye lagane se ekdum se aayega smooth nhi hoga */
+            background-color: mediumvioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+        <!-- inspect mein jaake box ke baad translate hatakr enter krke dekho transition dikhega -->
+    </div>
+</body>
+
+</html>
