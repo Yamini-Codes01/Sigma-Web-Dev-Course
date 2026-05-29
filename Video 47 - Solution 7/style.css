@@ -1,0 +1,167 @@
+        * {
+            font-family: sans-serif;
+        }
+
+        .logo {
+            width: 40px;
+            height: 23px;
+            /* background-color: blue; */
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            /* items tab use karenge jab bss ek row hai zaada hongi toh content use hoga  */
+
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .right span {
+            padding: 0 9px;
+        }
+
+        li img {
+            width: 20px;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin: 70px;
+        }
+
+        .first :first-child {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .first span {
+            font-size: 40px;
+        }
+
+        .first span img {
+            height: 40px;
+            margin: 0px 14px;
+        }
+
+        .first div p {
+            font-size: 23px;
+            width: 60vw;
+            text-align: center;
+            color: gray;
+        }
+
+        .btn {
+            background-color: #00b6d1;
+            border: none;
+            padding: 16px 20px;
+            color: white;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .green {
+            background-color: #5cb85c;
+            margin: 12px 0px;
+        }
+
+        .blue {
+            margin: 12px 0px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .small {
+            font-size: 12px;
+        }
+
+        .second {
+            align-items: center;
+            max-width: 68vw;
+            margin: auto;
+            /* ⭐isse bhi center ho jayega⭐ */
+        }
+
+        .item {
+            text-align: center;
+            padding: 23px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            align-items: center;
+        }
+
+        .item-lang {
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 23px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+        }
+
+        .download {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 50px 0;
+            font-family: sans-serif;
+        }
+
+        .download img {
+            height: 40px;
+            padding: 0% 12px;
+        }
+
+        .download :nth-child(2) {
+            font-size: 23px;
+        }
+
+        .download :nth-child(3) {
+            font-size: large;
+        }
+
+        @media screen and (max-width: 1145px) {
+            .first {
+                margin: 20px;
+            }
+
+            .first div p {
+                width: 90vw;
+            }
+
+            .second {
+                max-width: 90vw;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }

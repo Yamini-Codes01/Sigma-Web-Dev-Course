@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;500;600;700&display=swap');
+</style>
+
+    <style>
+        * {
+            font-family: 'Inter';
+        }
+
+        :root {
+            /* --color: #4ba4a6; */
+            --color: #00bfd4;
+            --seccolor: rgb(51, 187, 51);
+            --text: white;
+        }
+
+        .logo {
+            width: 40px;
+            height: 23px;
+            /* background-color: blue; */
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            /* items tab use karenge jab bss ek row hai zaada hongi toh content use hoga  */
+
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .right span {
+            padding: 0 9px;
+        }
+
+        li img {
+            width: 20px;
+        }
+
+        main .head h1 {
+            font-size: 48px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-top: 90px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        main .head h1 span img {
+            height: 46px;
+            /* border: 2px solid; */
+        }
+
+        .content {
+            font-size: 18px;
+            margin-top: 50px;
+            /* border: 2px solid; */
+            width: 600px;
+            color: #808080;
+            align-self: center;
+            text-align: center;
+            display: flex;
+            justify-self: center;
+        }
+
+        .content h3 {
+            font-size: 18px;
+            font-weight: 300;
+            color: #808080;
+        }
+
+        .yellow2 {
+            display: flex;
+            justify-self: center;
+            background-color: var(--color);
+            padding: 12px 40px;
+            margin: 40px;
+            border-radius: 6px;
+            cursor: pointer;
+            color: var(--text);
+        }
+
+        .h3 {
+            font-size: 22px;
+            color: #808080;
+            /* border: 2px solid; */
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .h3 h3 {
+            font-weight: 450;
+        }
+
+        .h3 span {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .h3 img {
+            width: 50px;
+        }
+
+        .h3 p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 420px 420px 420px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            display: flex;
+            justify-items: center;
+            /* flex-direction: column; */
+            display: grid;
+            margin: 10px;
+            height: 180px;
+            width: 400px;
+            background-color: #f5f5f5;
+            border-radius: 16px;
+            font-family: 'Inter';
+        }
+        .box1 h3{
+                margin-bottom: 46px;
+        }
+
+        .box h3, h4 {
+            display: flex;
+            flex-direction: column !important;
+
+        }
+        .box h3{
+            display: flex;
+            align-self: top;
+        }
+        .box h4{
+            font-weight: 400;
+            color: #808080;
+            margin: 0px;
+        }
+        .bit{
+            color: var(--text);
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+            /* background-color: rgb(153, 184, 211); */
+            box-sizing: border-box;
+            height: 78px;
+            display: grid;
+            grid-template-columns: 170px 170px;
+
+        }
+        .bit32 {
+            background-color: var(--color);
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+        .bit64{
+            background-color: var(--seccolor);
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+        .bit a{
+            text-decoration: none;
+            color: var(--text);
+        }
+        @media screen and (max-width: 968px) {
+            .boxes {
+                grid-template-columns: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Dark-logo-UE.png">
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="item">Products <span><img
+                                src="https://i.pinimg.com/736x/09/1d/16/091d1624210325d6b3239bac7867741b.jpg"
+                                alt=""></span></li>
+                    <li class="item">Pricing <span><img
+                                src="https://i.pinimg.com/736x/09/1d/16/091d1624210325d6b3239bac7867741b.jpg"
+                                alt=""></span></li>
+                    <li class="item">Resources <span><img
+                                src="https://i.pinimg.com/736x/09/1d/16/091d1624210325d6b3239bac7867741b.jpg"
+                                alt=""></span></li>
+                    <li class="item">About Us <span><img
+                                src="https://i.pinimg.com/736x/09/1d/16/091d1624210325d6b3239bac7867741b.jpg"
+                                alt=""></span></li>
+                    <li class="end"><img
+                            src="https://www.idiomasfachse.edu.pe/wp-content/uploads/2024/05/Ionic-Ionicons-Language.1024.png"
+                            alt=""></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="head">
+            <h1><span>Download UltraEdit for Windows&nbsp;</span><span><img
+                        src="https://www.ultraedit.com/wp-content/uploads/2023/01/image-1-1-1.svg" alt=""></span>
+            </h1>
+        </div>
+        <div class="content">
+            <h3>Download and try UltraEdit before you buy it! This download includes the full Windows
+                version of the text editor.</h3>
+        </div>
+
+        <div class="yellow2">
+            <p>DOWNLOAD MAC OR LINUS VERSION</p>
+        </div>
+        <div class="h3">
+            <h3>
+                <p>
+                    <span><img src="UE-logo.webp" alt=""></span>
+                    &nbsp;&nbsp;Download UltraEdit&nbsp;
+                    <span>v2025.2.0.24 (released 2026-04-10) | Latest changes</span>
+                </p>
+            </h3>
+        </div>
+
+        <div class="boxes">
+            <div class="box box1">
+                <h3>English</h3>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>Deutsch</h3>
+                <h4>German</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>Italiano</h3>
+                <h4>Italian</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>Español</h3>
+                <h4>Spanish</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>français</h3>
+                <h4>French</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>Português brasileiro</h3>
+                <h4>Brazilian Portuguese</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+            </div>
+            <div class="box">
+                <h3>日本</h3>
+                <h4>Japanese</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>한국어</h3>
+                <h4>Korean</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>华语</h3>
+                <h4>Chinese</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 64-bit</a></p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>華語</h3>
+                <h4>Traditional</h4>
+                <div class="bit">
+                    <p class="bit32"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                    <p class="bit64"><a href="https://i.pinimg.com/736x/88/c1/62/88c162aeaf8a5bc07c73a768bff49ef2.jpg">Download 32-bit</a></p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
