@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            margin: 20px;
+        }
+
+        .img1 {
+            width: 380px;
+            filter: blur(4px);
+            filter: sepia(120%) blur(2px);
+        }
+
+        .img2 {
+            width: 380px;
+            /* filter: brightness(160%); */
+            filter: invert(1);
+            filter: invert(0.2);
+            /* opacity: 80%; */
+            filter: opacity(50%);
+            /* peeche ka bhi dikhega */
+        }
+
+        .img3 {
+            width: 380px;
+            filter: contrast(160%) sepia(120%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1" src="https://i.pinimg.com/736x/2d/84/83/2d84834bc0ea22121f886adaf393972f.jpg" alt="">
+        <img class="img2" src="https://i.pinimg.com/736x/fa/30/62/fa3062f8a85b30a0bae632cd4cad1117.jpg" alt="">
+        <img class="img3" src="https://i.pinimg.com/736x/05/c6/7b/05c67b5c8d68c9eb77159d198100daab.jpg" alt="">
+    </div>
+</body>
+
+</html>
