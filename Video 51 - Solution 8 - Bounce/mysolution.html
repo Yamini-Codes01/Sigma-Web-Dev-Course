@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Bounce Animation</title>
+    <style>
+        .box {
+            width: 80vw;
+            height: 80vh;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        .ball {
+            width: 121px;
+            height: 121px;
+            border-radius: 100px;
+            background-color: mediumvioletred;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: bounce 2.5s linear 0s infinite;
+        }
+        @keyframes bounce{
+            0% {
+                transform:translateX(0) translateY(0);
+            }
+            9% {
+                transform: translateX(60px) translateY(-200px);
+            }
+            13%{
+                transform: translateX(120px) translateY(-200px);
+            }
+            22% {
+                transform: translateX(180px) translateY(0);
+            }
+            32% {
+                transform: translateX(220px) translateY(-140px);
+            }
+            35%{
+                transform: translateX(245px) translateY(-140px);
+            }
+            42% {
+                transform: translateX(290px) translateY(0);
+            }
+            48%{
+                transform: translateX(320px) translateY(-90px);
+            }
+            50% {
+                transform: translateX(340px) translateY(-90px);
+            }
+            56% {
+                transform: translateX(370px) translateY(0);
+            }
+            62%{
+                transform: translateX(410px) translateY(-60px);
+            }
+            65% {
+                transform: translateX(430px) translateY(-60px);
+            }
+            71% {
+                transform: translateX(460px) translateY(0);
+            }
+            76% {
+                transform: translateX(520px) translateY(-30px);
+            }
+            78% {
+                transform: translateX(540px) translateY(-30px);
+            }
+            84% {
+                transform: translateX(580px) translateY(0);
+            }
+            100% {
+                transform: translateX(800px) translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="ball translate">
+
+        </div>
+    </div>
+</body>
+
+</html>
